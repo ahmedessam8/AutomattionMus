@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MusalaWebTest">
+
+    <listeners>
+        <listener class-name="resources.ExtentReporterNG"/>
+    </listeners>
+
+    <test name="Musala web test" parallel="classes" thread-count="4">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.TestCase1ContactUs"></class>
+            <class name="tests.TestCase2Company"></class>
+            <class name="tests.TestCase3Careers"></class>
+            <class name="tests.TestCase4careersList"></class>
+
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
